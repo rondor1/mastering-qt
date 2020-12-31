@@ -17,12 +17,12 @@ public:
     // SysInfo interface
 public:
     void init();
-    double cpuLoadAverage();
-    double memoryUsed();
+    [[nodiscard]] double cpuLoadAverage();
+    [[nodiscard]] double memoryUsed();
 
 private:
-    QVector<qulonglong> cpuRawData();
-    qulonglong convertFileTime(const FILETIME& filetime) const;
+    [[nodiscard]] QVector<qulonglong> cpuRawData();
+    [[nodiscard]] qulonglong convertFileTime(const FILETIME& filetime) const;
 
 private:
     QVector<qulonglong> m_CpuLoadLastValues;
