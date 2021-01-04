@@ -44,11 +44,11 @@ void AlbumDao::updateAlbum(Album &album) const
     DatabaseManager::instance().debugQuery(query);
 }
 
-void AlbumDao::removeAlbum(Album &album) const
+void AlbumDao::removeAlbum(int id) const
 {
     QSqlQuery query(m_database);
     query.prepare("DELETE FROM albums WHERE id = (:id)");
-    query.bindValue(":id", album.id());
+    query.bindValue(":id", id);
     query.exec();
     DatabaseManager::instance().debugQuery(query);
 }

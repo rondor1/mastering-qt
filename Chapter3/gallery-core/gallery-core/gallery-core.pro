@@ -13,6 +13,7 @@ CONFIG += c++14
 SOURCES += \
     album.cpp \
     albumdao.cpp \
+    albummodel.cpp \
     databasemanager.cpp \
     gallerycore.cpp \
     picture.cpp \
@@ -21,6 +22,7 @@ SOURCES += \
 HEADERS += \
     album.h \
     albumdao.h \
+    albummodel.h \
     databasemanager.h \
     gallery-core_global.h \
     gallerycore.h \

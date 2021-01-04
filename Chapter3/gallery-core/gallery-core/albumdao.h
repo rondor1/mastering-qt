@@ -16,10 +16,11 @@ public:
     void init() const;
     void addAlbum(Album& album) const;
     void updateAlbum(Album& album) const;
-    void removeAlbum(Album& album) const;
+    void removeAlbum(int id) const;
     albumContainer albums() const;
 private:
     QSqlDatabase& m_database;
+
 };
 
 #endif // ALBUMDAO_H
