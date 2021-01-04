@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AlbumListView</class>
+ <widget class="QWidget" name="AlbumListView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>476</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="frame">
+     <item>
+      <widget class="QPushButton" name="createAlbumButton">
+       <property name="text">
+        <string>Create</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>res/icons/album-add.png</normaloff>res/icons/album-add.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QListView" name="albumList"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
