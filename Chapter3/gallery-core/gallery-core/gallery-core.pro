@@ -12,16 +12,20 @@ CONFIG += c++14
 
 SOURCES += \
     album.cpp \
+    albumdao.cpp \
     databasemanager.cpp \
     gallerycore.cpp \
-    picture.cpp
+    picture.cpp \
+    picturedao.cpp
 
 HEADERS += \
     album.h \
+    albumdao.h \
     databasemanager.h \
     gallery-core_global.h \
     gallerycore.h \
-    picture.h
+    picture.h \
+    picturedao.h
 
 # Default rules for deployment.
 unix {

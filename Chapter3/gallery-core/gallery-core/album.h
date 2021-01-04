@@ -8,7 +8,7 @@
 class GALLERYCORE_EXPORT Album
 {
 public:
-    explicit Album(const QString& name);
+    explicit Album(const QString& name = "");
 
     QString name() const;
     void setName(const QString &name);

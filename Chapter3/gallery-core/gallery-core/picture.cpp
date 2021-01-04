@@ -12,6 +12,11 @@ Picture::Picture(const QString& filePath) :
 
 }
 
+Picture::~Picture()
+{
+
+}
+
 int Picture::albumId() const
 {
     return m_albumId;
@@ -30,4 +35,14 @@ int Picture::id() const
 void Picture::setId(int id)
 {
     m_id = id;
+}
+
+QUrl Picture::fileUrl() const
+{
+    return m_fileUrl;
+}
+
+void Picture::setFileUrl(const QUrl &fileUrl)
+{
+    m_fileUrl = fileUrl;
 }
