@@ -14,9 +14,11 @@ public:
     PictureDao(QSqlDatabase& database);
     void init() const;
     void addPictureInAlbum(int albumId, Picture& picture) const;
+    void removePicture(int id) const;
     void removePictureFromAlbum(int albumId);
 
     pictureContainer picturesFromAlbum(int albumId) const;
+
 private:
     QSqlDatabase& m_database;
 };

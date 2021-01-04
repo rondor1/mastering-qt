@@ -17,7 +17,8 @@ SOURCES += \
     databasemanager.cpp \
     gallerycore.cpp \
     picture.cpp \
-    picturedao.cpp
+    picturedao.cpp \
+    picturemodel.cpp
 
 HEADERS += \
     album.h \
@@ -27,7 +28,8 @@ HEADERS += \
     gallery-core_global.h \
     gallerycore.h \
     picture.h \
-    picturedao.h
+    picturedao.h \
+    picturemodel.h
 
 # Default rules for deployment.
 unix {
