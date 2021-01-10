@@ -10,17 +10,20 @@ CONFIG += c++14
 
 SOURCES += \
     albumlistview.cpp \
+    albumwidget.cpp \
     main.cpp \
     mainwindow.cpp \
     thumbnailproxymodel.cpp
 
 HEADERS += \
     albumlistview.h \
+    albumwidget.h \
     mainwindow.h \
     thumbnailproxymodel.h
 
 FORMS += \
     albumlistview.ui \
+    albumwidget.ui \
     mainwindow.ui
 
 # Default rules for deployment.
