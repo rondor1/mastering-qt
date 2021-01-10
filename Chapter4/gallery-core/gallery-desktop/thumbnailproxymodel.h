@@ -21,7 +21,7 @@ private:
     void reloadThumbnails();
 
 private:
-    QHash<int, QPixmap*> m_thumbnails;
+    QHash<QString, QPixmap*> m_thumbnails;
 };
 
 #endif // THUMBNAILPROXYMODEL_H
